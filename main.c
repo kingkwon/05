@@ -10,17 +10,13 @@ int main(int argc, char *argv[]) {
 	printf("input a integer : ");
 	scanf("%d", &a);
 	
-	if(a>0)
+	if(a>=0)
 	{
-		printf("양수입니다.\n");
-	}
-	else if(a<0)
-	{
-		printf("음수입니다.\n");
-	}
+		printf("절댓값은 %d입니다.", a);	
+	} 
 	else
 	{
-		printf("0입니다.\n");
+		printf("절댓값은 %d입니다.", -a);
 	}
 	
 	return 0;
